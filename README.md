@@ -29,7 +29,32 @@ ShareMemory.Serialization ： ShareMemory 序列化库 ， 用于 序列化
 Test ： 用于测试 ShareMemory.Serialization 的 测试项目
 
 
-ShareMemory 服务器端 在 App.config 中配置 字典 和 队列，在 AppSettings 中 通过 “ShareMemory.Dics” 和 “ShareMemory.Queues” 2 个 key 来配置 字典 和 队列 ， 如 add key="ShareMemory.Dics" value="Dic1, Dic2, Dic3"  add key="ShareMemory.Queues" value="Queue1, Queue2, Queue3" ， Dic1 Dic2 Dic3 表示要创建的 字典 ， Queue1 Queue2 Queue3 表示要创建的 队列 ， 队列名之间用 逗号 “,” 隔开 。 这样 ShareMemory Host 在启动时会创建 Dic1 Dic2 Dic3 3 个 字典 ， 和 Queue1 Queue2 Queue3 3 个 队列 。
+ShareMemory 服务器端 在 App.config 中配置 字典 和 队列，在 AppSettings 中 通过 “ShareMemory.Dics” 和 “ShareMemory.Queues” 2 个 key 来配置 字典 和 队列 ， 如 add key="ShareMemory.Dics" value="Dic1, Dic2, Dic3"  add key="ShareMemory.Queues" value="Queue1, Queue2, Queue3" ， Dic1 Dic2 Dic3 表示要创建的 字典 ， Queue1 Queue2 Queue3 表示要创建的 队列 ， 字典名 队列名之间用 逗号 “,” 隔开 。 这样 ShareMemory Host 在启动时会创建 Dic1 Dic2 Dic3 3 个 字典 ， 和 Queue1 Queue2 Queue3 3 个 队列 。
+
+
+ShareMemory 客户端 通过 ShareMemory.Client 库 提供的 Helper 类 ， Dic 类 ， Q 类 来 访问 ShareMemory 服务器端 。
+
+Helper类提供 GetDic() 方法 ， 返回 Dic 对象 。 和 GetQ() 方法，返回 Q 对象 。
+
+Dic 提供 Set(key, value) 方法 ， Get<T>(key) 方法 ， TryGet<T>(key out value) 方法 ， Remove(key) 方法 。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
