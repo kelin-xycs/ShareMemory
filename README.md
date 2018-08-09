@@ -19,7 +19,14 @@ Simple Object 是指 属性（Property）和 字段（Field） 类型 是 Value 
 
 ShareMemory 提供的 数据操作 都是 原子操作 ， 是 线程安全 的 。
 
+解决方案 中 包含 6 个 项目：
 
+Client ： 用于 Demo 的 Client
+Server ： 用于 Demo 的 Server
+ShareMemory ： ShareMemory 核心库 ， 用于 Server 端
+ShareMemory.Client ： ShareMemory 客户端库 ， 用于 Client 端
+ShareMemory.Serialization ： ShareMemory 序列化库 ， 用于 序列化
+Test ： 用于测试 ShareMemory.Serialization 的 测试项目
 
 
 
