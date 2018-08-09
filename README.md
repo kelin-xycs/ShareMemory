@@ -36,7 +36,10 @@ ShareMemory 客户端 通过 ShareMemory.Client 库 提供的 Helper 类 ， Dic
 
 Helper类提供 GetDic() 方法 ， 返回 Dic 对象 。 和 GetQ() 方法，返回 Q 对象 。
 
-Dic 提供 Set(key, value) 方法 ， Get<T>(key) 方法 ， TryGet<T>(key out value) 方法 ， Remove(key) 方法 。
+Dic 提供 Set(key, value) 方法 ， Get<T>(key) 方法 ， TryGet<T>(key out value) 方法 ， Remove(key) 方法 。 Set() 方法 新增键值对 或者 修改键值对的值 ， 如果 键值对 不存在，则新增键值对，如果键值对已存在，则更新值 。 Get() 方法从 Dic 取得值 ， 对于 引用类型 ， 如果 键值对 不存在 ， 则返回 null 。 TryGet() 方法也是从 Dic 取得值，通过 out value 参数返回， 若 键值对 不存在，则 Get() 方法返回值为 false 。 TryGet<T>() 方法是对 Value Type 设计的 ， 因为 Value Type 不能根据返回值为 null 来判断键值对在 Dic 中是否存在 。 Remove() 方法 移除 键值对 ， 如果 键值对 不存在 ， 也不会报错 。 
+
+
+Q 提供 En() 方法 ， De<T> ， TryDe<T>() 方法 。 En() 方法将 对象 放入 队列 ， De() 方法从 队列 取出对象 ， 
 
 
 
