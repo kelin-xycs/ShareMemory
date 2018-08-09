@@ -29,6 +29,27 @@ ShareMemory.Serialization ： ShareMemory 序列化库 ， 用于 序列化
 Test ： 用于测试 ShareMemory.Serialization 的 测试项目
 
 
+ShareMemory 服务器端 在 App.config 中配置 字典 和 队列，在 AppSettings 中 通过 “ShareMemory.Dics” 和 “ShareMemory.Queues” 2 个 key 来配置 字典 和 队列 ， 如 add key="ShareMemory.Dics" value="Dic1, Dic2, Dic3"  add key="ShareMemory.Queues" value="Queue1, Queue2, Queue3" ， Dic1 Dic2 Dic3 表示要创建的 字典 ， Queue1 Queue2 Queue3 表示要创建的 队列 ， 队列名之间用 逗号 “,” 隔开 。 这样 ShareMemory Host 在启动时会创建 Dic1 Dic2 Dic3 3 个 字典 ， 和 Queue1 Queue2 Queue3 3 个 队列 。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
