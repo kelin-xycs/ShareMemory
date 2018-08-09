@@ -75,6 +75,11 @@ ShareMemory.Serialization 可以作为一个 序列化库 单独使用 。
 
 
 
+ShareMemory 没有提供 对 数据操作 的 锁 机制（Lock） ， 因为 对 数据 的 锁机制 逻辑 比较 复杂 。 那么 ， 多个 客户端 线程 之间 怎么进行 通信协作 呢 ？ ShareMemory 提供了 与 数据无关 的 锁机制 。 Helper类 提供了 TryLock(lockName) 方法 和 UnLock(lockName, lockId) 方法 。 TryLock() 用来获取 锁 ， 参数 lockName 是 锁 的 名字 ， 参与协作 的 线程 间 可以 约定 一个 锁 的 名字 来 通信 。 TryLock() 方法 的 返回值 是 lockId ， 用来 标识 1 次 Lock ， 因为同一个 名字 的 锁 可能会多次 Lock 和 UnLock 。 UnLock 的时候需要 传入 lockId 参数 。 
+
+这就是 ShareMemory 提供的 锁机制 ， 可以利用这个 锁机制 来 实现 多个 客户端 线程 间 的 通信协作 。 以此为基础 ， 开发者还可以实现各种丰富的线程间通信协作方式 。            
+
+
 
 
 
