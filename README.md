@@ -42,6 +42,18 @@ Dic 提供 Set(key, value) 方法 ， Get<T>(key) 方法 ， TryGet<T>(key out v
 Q 提供 En() 方法 ， De<T> ， TryDe<T>(out value) 方法 。 En() 方法将 对象 放入 队列 ， De() 方法从 队列 取出对象 ， 对于 引用类型 ， 若返回 null ， 表示 队列 为空 。 TryDe() 方法也是从 队列 取出 对象 ， 通过 out value 参数返回 ， 若 队列 为空 ， TryDe() 方法返回值为 false 。 TryDe() 方法是对 Value Type 设计的 ， 因为 Value Type 不能根据返回值为 null 来判断 队列 是否为空 。 
   
 
+接下来 说明 一下 序列化 的 格式 ：
+
+序列化由 ShareMemory.Serialization 项目完成 ， 序列化格式 是 这样的 ：
+
+比如 ， 有一个 Simple Object ， 包含有 1 个 int A 属性 ， 1 个 string B 字段 ， A = 2 , B = "Hello" ， 那么 ， 序列化产生这样一个字符串 ： 
+
+“o 1 A1 21 B5 Hello”
+
+把 这个 字符串 通过 Encoding.Utf8 转成 byte 数组 ， 就是 序列化 的 结果 了 。   
+
+这个 字符串 的 开头 是 “o” ， 这表示 Simple Object 对象 ， 后面跟着 一个 空格 ， 空格 后面 的 “1” 表示 接下来 的 数据长度 是 1 个 字符 。 这个数据就是 后面的 “A” ， 这表示 A 属性的 属性名 ， “A” 后面 有一个 “1” ， 这表示 下一项 的 数据长度 是 1 ， 这个数据就是 后面的 “2” ， 这是 A 属性的 值 ， 以此类推 ， “2” 后面 紧跟着 的 “1” 是 下一项 的 数据长度 ， 这个数据就是 “B” 字符 ， 这表示 B 属性的 属性名 ， “B” 后面的 “5” 表示 下一项 的 数据长度 ， 这个数据就是 “Hello” 。 这样就完成了 对 这个 Simple Object 的 序列化 。   
+
 
 
 
