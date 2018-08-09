@@ -1,0 +1,11 @@
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\Server.exe.config
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\Server.exe
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\Server.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\ShareMemory.dll
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\MessageRPC.dll
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\ShareMemory.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Server\bin\Debug\ShareMemory.Serialization.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\新建文件夹\Projects 3\ShareMemory\Server\obj\Debug\Server.exe
+C:\新建文件夹\Projects 3\ShareMemory\Server\obj\Debug\Server.pdb

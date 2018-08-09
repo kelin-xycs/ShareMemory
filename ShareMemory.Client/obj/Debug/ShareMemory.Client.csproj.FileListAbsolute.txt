@@ -1,0 +1,7 @@
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\obj\Debug\ShareMemory.Client.csprojResolveAssemblyReference.cache
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\bin\Debug\ShareMemory.Client.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\bin\Debug\ShareMemory.Client.pdb
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\bin\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\bin\Debug\ShareMemory.Serialization.pdb
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\obj\Debug\ShareMemory.Client.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory.Client\obj\Debug\ShareMemory.Client.pdb

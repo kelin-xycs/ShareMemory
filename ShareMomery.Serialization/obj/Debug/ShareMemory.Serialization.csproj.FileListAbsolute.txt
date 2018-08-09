@@ -1,0 +1,4 @@
+C:\新建文件夹\Projects 3\ShareMemory\ShareMomery.Serialization\bin\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMomery.Serialization\bin\Debug\ShareMemory.Serialization.pdb
+C:\新建文件夹\Projects 3\ShareMemory\ShareMomery.Serialization\obj\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMomery.Serialization\obj\Debug\ShareMemory.Serialization.pdb

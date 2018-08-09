@@ -1,0 +1,5 @@
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory\bin\Debug\ShareMemory.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory\bin\Debug\ShareMemory.pdb
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory\obj\Debug\ShareMemory.dll
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory\obj\Debug\ShareMemory.pdb
+C:\新建文件夹\Projects 3\ShareMemory\ShareMemory\obj\Debug\ShareMemory.csprojResolveAssemblyReference.cache

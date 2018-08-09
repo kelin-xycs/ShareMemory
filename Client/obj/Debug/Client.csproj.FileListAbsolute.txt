@@ -1,0 +1,14 @@
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.Form1.resources
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.Properties.Resources.resources
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\Client.exe.config
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\Client.exe
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\Client.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\ShareMemory.Client.dll
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\MessageRPC.dll
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\ShareMemory.Client.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Client\bin\Debug\ShareMemory.Serialization.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.exe
+C:\新建文件夹\Projects 3\ShareMemory\Client\obj\Debug\Client.pdb

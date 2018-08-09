@@ -1,0 +1,11 @@
+C:\新建文件夹\Projects 3\ShareMemory\Test\bin\Debug\Test.exe.config
+C:\新建文件夹\Projects 3\ShareMemory\Test\bin\Debug\Test.exe
+C:\新建文件夹\Projects 3\ShareMemory\Test\bin\Debug\Test.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.Form1.resources
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.Properties.Resources.resources
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.exe
+C:\新建文件夹\Projects 3\ShareMemory\Test\obj\Debug\Test.pdb
+C:\新建文件夹\Projects 3\ShareMemory\Test\bin\Debug\ShareMemory.Serialization.dll
+C:\新建文件夹\Projects 3\ShareMemory\Test\bin\Debug\ShareMemory.Serialization.pdb
