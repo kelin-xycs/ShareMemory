@@ -15,7 +15,7 @@ ShareMemory 设计目标中支持的 集群 包含 Web 集群 ， 分布式并�
 
 ShareMemory 支持 2 种 数据结构 ： 字典（Dictionary）  队列（Queue） 。
 
-支持 6 大类 数据类型 ： Value Type ， string ， Simple Object ， Walue Type 数组 ， string 数组 ， Simple Object 数组 。
+支持 6 大类 数据类型 ： Value Type ， string ， Simple Object ， Value Type 数组 ， string 数组 ， Simple Object 数组 。
 
 可以将这 6 大类 数据类型 存放到 ShareMemory 。
 
