@@ -22,14 +22,25 @@ ShareMemory 提供的 数据操作 都是 原子操作 ， 是 线程安全 的 
 解决方案 中 包含 6 个 项目：
 
 Client ： 用于 Demo 的 Client
+
 Server ： 用于 Demo 的 Server
+
 ShareMemory ： ShareMemory 核心库 ， 用于 Server 端
+
 ShareMemory.Client ： ShareMemory 客户端库 ， 用于 Client 端
+
 ShareMemory.Serialization ： ShareMemory 序列化库 ， 用于 序列化
+
 Test ： 用于测试 ShareMemory.Serialization 的 测试项目
 
 
-ShareMemory 服务器端 在 App.config 中配置 字典 和 队列，在 AppSettings 中 通过 “ShareMemory.Dics” 和 “ShareMemory.Queues” 2 个 key 来配置 字典 和 队列 ， 如 add key="ShareMemory.Dics" value="Dic1, Dic2, Dic3"  add key="ShareMemory.Queues" value="Queue1, Queue2, Queue3" ， Dic1 Dic2 Dic3 表示要创建的 字典 ， Queue1 Queue2 Queue3 表示要创建的 队列 ， 字典名 队列名之间用 逗号 “,” 隔开 。 这样 ShareMemory Host 在启动时会创建 Dic1 Dic2 Dic3 3 个 字典 ， 和 Queue1 Queue2 Queue3 3 个 队列 。
+ShareMemory 服务器端 在 App.config 中配置 字典 和 队列，在 AppSettings 中 通过 “ShareMemory.Dics” 和 “ShareMemory.Queues” 2 个 key 来配置 字典 和 队列 ， 如 
+
+add key="ShareMemory.Dics" value="Dic1, Dic2, Dic3"  
+
+add key="ShareMemory.Queues" value="Queue1, Queue2, Queue3"  
+
+Dic1 Dic2 Dic3 表示要创建的 字典 ， Queue1 Queue2 Queue3 表示要创建的 队列 ， 字典名 队列名之间用 逗号 “,” 隔开 。 这样 ShareMemory Host 在启动时会创建 Dic1 Dic2 Dic3 3 个 字典 ， 和 Queue1 Queue2 Queue3 3 个 队列 。
 
 
 ShareMemory 客户端 通过 ShareMemory.Client 库 提供的 Helper 类 ， Dic 类 ， Q 类 来 访问 ShareMemory 服务器端 。
@@ -76,6 +87,8 @@ ShareMemory.Serialization 可以作为一个 序列化库 单独使用 。
 
 
 ShareMemory 没有提供 对 数据操作 的 锁 机制（Lock） ， 因为 对 数据 的 锁机制 逻辑 比较 复杂 。 那么 ， 多个 客户端 线程 之间 怎么进行 通信协作 呢 ？ ShareMemory 提供了 与 数据无关 的 锁机制 。 Helper类 提供了 TryLock(lockName) 方法 和 UnLock(lockName, lockId) 方法 。 TryLock() 用来获取 锁 ， 参数 lockName 是 锁 的 名字 ， 参与协作 的 线程 间 可以 约定 一个 锁 的 名字 来 通信 。 TryLock() 方法 的 返回值 是 lockId ， 用来 标识 1 次 Lock ， 因为同一个 名字 的 锁 可能会多次 Lock 和 UnLock 。 UnLock 的时候需要 传入 lockId 参数 。 
+
+在 分布式系统 中 ， 因为一些原因 ， 可能会发生 锁 没有解锁就被 “遗弃” 的 情况 ， 比如 发起 锁定 的 客户端 线程 死掉 或者 掉线 了 ， 这样就会造成 “遗弃” 的 锁 。 这个 锁 就一直没人解 ， 就会造成 其它 线程 一直等待而不能正常运行 。 为了避免这种问题 ， ShareMemory 规定 锁 的 有效时间 是 1 分钟 ， 超过 1 分钟的锁会被系统 自动解锁 。 ShareMemory 每 30 秒 执行一次 回收锁 的 任务 ， 所以 锁 的 实际有效时间 理论上 大约是 1 分 30 秒 。
 
 这就是 ShareMemory 提供的 锁机制 ， 可以利用这个 锁机制 来 实现 多个 客户端 线程 间 的 通信协作 。 以此为基础 ， 开发者还可以实现各种丰富的线程间通信协作方式 。            
 
