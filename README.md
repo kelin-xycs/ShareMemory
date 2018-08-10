@@ -9,6 +9,10 @@ ShareMemory 是 一个用 C# 实现的 No Sql 数据库 ， 也可以说是 分�
 
 构建 集群 的 关键是 共享内存 。 ShareMemory 可以作为 集群 的 共享内存 ， 帮助 构建 集群 ， 这是 ShareMemory 的 第一 设计目标 。
 
+事实上 ， 在过去的 十几年间 ， 利用 分布式缓存 来作为 共享内存 构建 Web 集群 ， 已经成为 事实上 的 做法 。
+
+ShareMemory 设计目标中支持的 集群 包含 Web 集群 ， 分布式并行计算集群  等。
+
 ShareMemory 支持 2 种 数据结构 ： 字典（Dictionary）  队列（Queue） 。
 
 支持 6 大类 数据类型 ： Value Type ， string ， Simple Object ， Walue Type 数组 ， string 数组 ， Simple Object 数组 。
