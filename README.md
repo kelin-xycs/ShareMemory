@@ -143,6 +143,14 @@ ShareMemory 提供一个内存模型，持久化 仍然 交给 传统的 关系�
 粗略 的 测试 ， 从 固态硬盘 上 读取 1 KB 的数据到内存 ， 大约花费时间为 113 个 时钟周期 ， 约等于 70 纳秒 。 我们可以来假想评估一个 使用场景 。 比如 ， 以 门户网站 的 场景 为例 ， 假设有 100 万 人同时在线 ， 用 ShareMemory 来存储 User Profile 的话 ， 假如每个用户的 User Profile 大小 是 1 KB ， 那么 ， 100 万个 用户的 User Profile 占用的空间就是 1 G 。 如果有 1 亿个用户的话 ， 那占用的空间就是 100 G 。 在 操作系统 虚拟内存 的 支持 下 ， 32 G 内存 + 120 G 固态硬盘 应该会有不错的表现 。 或者 ， 16 G 内存 + 120 G 固态硬盘 ， 8 G 内存 + 120 G 固态硬盘 也许表现都会很好 。  
 
 
+ShareMemory 的 远程通信 采用 MessageRPC 实现 ， MessageRPC 是我写的另一个项目 ：  https://github.com/kelin-xycs/MessageRPC       
+
+
+
+
+
+
+
 
 
 
