@@ -86,6 +86,10 @@ Value Type 数组 ， string 数组 的 原理 都包含在 上述 里了 ， �
 
 可以实际到 项目 里 运行 看一下 效果 就比较清楚了 。      ^ ^
 
+ShareMemory.Serialization 只会序列化 公有 的 属性 和 字段 ， 并且需要在要序列化的 属性 和 字段 上 加上  [ S ]  标记  。
+
+ShareMemory.Serialization 并不要求 序列化方 和 反序列化方 的 对象定义 在 语法 上 完全一致 ， 比如 序列化方 的 对象 有一个 A 属性 ， 反序列化方 可以用一个 A 字段 来 接收 A 属性 的 值 ， 只要 两者 的 名字 相同就行 。
+
 ShareMemory.Serialization 可以作为一个 序列化库 单独使用 。  
 
 
